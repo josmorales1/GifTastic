@@ -6,7 +6,7 @@ html {
   
   body {
       
-      background-image: url("/assets/image/dark-paths.png");
+      background-image: url("../image/dark-paths.png");
         margin-bottom: 60px;
   }
   
