@@ -32,15 +32,12 @@ $("#buttonArea").on("click", ".btn", function(){
           	var results = response.data;
 
           	for (var i = 0; i < results.length; i++) {
-          		// a div is created to hold a gif of any topic
 	          	var topicDiv = $("<div>");
 	 			
-	          	// Under every gif, display its rating (PG, G, so on).
 	 			var p = $("<p>");
 	 			p.text(results[i].rating);
 	 			var p = $("<p>").text("Rating: " + results[i].rating);
 
-	 			// add a CSS style to create colored borders around the gifs
 	 			var topicImage = $("<img>").addClass("orangeBorder");
 
 	 			// add states of animate and still which will be toggled 
@@ -52,7 +49,6 @@ $("#buttonArea").on("click", ".btn", function(){
 	 			
 	 			// image is appended to the div
 	 			topicDiv.append(topicImage);
-	 			// rating is appended to the div below the gif
 	 			topicDiv.append(p); 			
 	 			// new images will be placed at the beginning (top) of the containing gif area
 	 			$("#gifArea").prepend(topicDiv);
@@ -61,7 +57,7 @@ $("#buttonArea").on("click", ".btn", function(){
   })
 
 
-// When the user clicks one of the still GIPHY images, and it animates. When the user clicks the gif again, it stops playing.
+// When the user clicks one of the  GIPHY images, and it animates. When the user clicks the gif again, it stops playing.
 $("#gifArea").on("click", ".gif", function(event){
 	event.preventDefault();
 	
@@ -80,7 +76,7 @@ $("#gifArea").on("click", ".gif", function(event){
 })
    
 
-// The form takes the value from the input box and adds it into the topics  array. The buttonGenerator function is called that takes each topic in the array remakes the buttons on the page.
+// The buttonGenerator function is called that takes each topic in the array remakes the buttons on the page.
 
 
 $(".submit").on("click", function(event){
