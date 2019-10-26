@@ -1,51 +1,46 @@
 html {
     position: relative;
     min-height: 100%;
+    
   }
   
   body {
-      background-color:blue;
-      /* Margin bottom by footer height */
+      
+      background-image: url("/assets/image/dark-paths.png");
         margin-bottom: 60px;
   }
   
-  #wrap {
-      background-color:blue;
-      color:#646464;
-  }
+  
   
   #header {
-      background-color:blue;
-      height:70px;
+         height:70px;
   }
   
   #title {
       color:white;
       text-align:center;
-      padding-top:16px;
+      padding-top:20px;
   }
   
   #buttonArea{
       margin-top:10px;
+      color: white;
   }
   
+  
   .btn {
-      margin:3px;
+      margin:10px;
   }
   
   #gifArea {
-      margin-top:20px;
+      margin-top:10px;
   }
-  
-  .orangeBorder {
-      border-radius: 5px;
-      border: 2px solid blue;
-  }
+
   
   .submit {
       background-color: white;
-      color: blue;
-      border:1px solid white;
+      color: black;
+      border:1px solid #113f67;
   }
   
   .footer {
@@ -55,12 +50,12 @@ html {
       height: 60px;
       line-height: 60px;
       text-align:center;
-      background-color: blue;
+      
       
   }
   
   .credits {
-      font-size: .8em;
+    color: white;
   }
   .clear {
       clear:both;
