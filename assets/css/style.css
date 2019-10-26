@@ -22,7 +22,6 @@ html {
   #title {
       color:white;
       text-align:center;
-      font-family: 'Pacifico', cursive;
       padding-top:16px;
   }
   
@@ -66,3 +65,4 @@ html {
   .clear {
       clear:both;
   }
+ 
